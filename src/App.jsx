@@ -18,7 +18,7 @@ const Market = ({ useReact, faker }) => {
     setInterval(() => {
       for (const stock of market) {
         const chance = Math.random();
-        const delta = Math.floor(Math.random() * 10);
+        const delta = Math.floor(Math.random() * 100);
         if (chance < 0.1) {
           stock.price -= delta;
           stock.delta = -delta;
@@ -30,7 +30,7 @@ const Market = ({ useReact, faker }) => {
 
       market.sort((a, b) => b.price - a.price);
       setMarket([...market]);
-    }, 1);
+    }, 1000);
   }, []);
   return useReact ? (
     <ReactStockTable data={market} />
