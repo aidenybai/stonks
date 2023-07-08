@@ -1,6 +1,19 @@
 import React from 'react';
 import { block, For } from '../million/react.mjs';
 
+// TODO: try to allow @optimizer to optimize this
+// figure out why inline is faster than multiple elements
+// fix:
+
+/**
+ * fucntion ... ({props..}) {
+ * const thing (not wokring) = value;
+ *
+ * return JSX
+ *
+ * }
+ */
+
 const StockRow = block(({ name, symbol, price, delta }) => {
   return (
     <tr>
