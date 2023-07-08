@@ -1,5 +1,5 @@
 import React from 'react';
-import { block, For } from 'million/react';
+import { block, For } from '../million/react.mjs';
 
 const StockRow = block(({ name, symbol, price, delta }) => {
   return (
