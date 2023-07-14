@@ -14,7 +14,7 @@ const StockTable = ({ data }) => {
       <tbody>
         <For each={data}>
           {({ name, symbol, price, delta }) => (
-            <tr>
+            <tr key={name + symbol}>
               <td className="px-3 py-0 border-b border-gray-200 bg-white text-xs">
                 <p>
                   {name} ({symbol}) is at ${price}
