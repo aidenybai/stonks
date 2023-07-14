@@ -30,7 +30,7 @@ const StockRow = block(({ name, symbol, price, delta }) => {
   );
 });
 
-const StockTable = block(({ data }) => {
+const StockTable = ({ data }) => {
   return (
     <table className="border border-gray-200">
       <thead>
@@ -55,6 +55,6 @@ const StockTable = block(({ data }) => {
       </tbody>
     </table>
   );
-});
+};
 
 export default StockTable;
