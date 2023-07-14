@@ -1,9 +1,13 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   million:
-    specifier: ^2.4.9
-    version: 2.4.9
+    specifier: 2.5.1-beta.2
+    version: 2.5.1-beta.2
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -1092,10 +1096,11 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /million@2.4.9:
-    resolution: {integrity: sha512-5R2NgaGhSI6ASP0oVEZZvCF+xoYBnfKBFVCOtO3hedbhNXKIe3A/++1WV7ddr62yA4fbg1xfR1Lhs4Srn90aGw==}
+  /million@2.5.1-beta.2:
+    resolution: {integrity: sha512-d2xDqkD+grwT5t0++VLELRh7+6KcSOdwwP26TAmT6jhzfxEQlSRvkBr8Cai3C3bxlKU9WcTMFQkU3k8JU0jH+g==}
     dependencies:
       '@babel/core': 7.22.8
+      '@babel/generator': 7.22.7
       '@babel/plugin-syntax-jsx': 7.22.5(@babel/core@7.22.8)
       '@babel/plugin-syntax-typescript': 7.22.5(@babel/core@7.22.8)
       '@babel/types': 7.22.5

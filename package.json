@@ -6,7 +6,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "million": "^2.4.9",
+    "million": "2.5.1-beta.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-lag-radar": "^1.0.0",

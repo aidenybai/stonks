@@ -1,5 +1,5 @@
 import React from 'react';
-import { block, For } from '../million/react.mjs';
+import { block, For } from 'million/react';
 
 // TODO: try to allow @optimizer to optimize this
 // figure out why inline is faster than multiple elements
@@ -41,7 +41,7 @@ const StockTable = block(({ data }) => {
         </tr>
       </thead>
       <tbody>
-        <For each={data} memo>
+        <For each={data}>
           {({ name, symbol, price, delta }) => (
             <StockRow
               key={name + symbol}
